@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>" Simple Calculator</title>
+</head>
+<body>
+	<form name="Example">
+<input type="text" name="input" size="20">
+<input type="button" name="B1" value="Calculate" onclick="fun()">
+<input type="reset" name="reset" value="reset">
+Answer : <input type="text" name="answer" size="20">
+</form>
+<button onclick="window()">Please click !</button>
+</body>
+
+<script>
+	function fun(){
+		var ans=eval(document.Example.input.value);
+		document.Example.answer.value=ans;
+	}
+	function window(){
+		debugger;
+		window.location="https://www.youtube.com/watch?v=a3aNOVG6fmc";
+	}
+</script>
+</html>

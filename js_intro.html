@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>"Introduction to JavaScript"</title>
+</head>
+<body>
+	<script>
+	//	alert("Hello fraands");
+
+		var a=10
+		var b=20
+		if(a>b){
+			document.write("a is greater");
+		}else if(a<b){
+			document.write("b is greater");
+		}else{
+			document.write("both are equal");
+		}
+        document.write("<br>");
+		switch(a){
+			case 10:
+			     document.write("this is 10th case");
+			     break;
+			case 20:
+			     document.write("this is 20th case");
+			     break;
+		}
+		document.write("<br>");
+		for(var i=0;i<5;i++){
+			document.write(i);
+			document.write("<br>");
+		}
+		document.write("<br>");
+		var count=0
+		do{
+            document.write(count);
+            document.write("<br>");
+            count++;
+		}while(count<5);
+    var arr=new Array;
+    arr[0]="Hey"
+    arr[1]=10
+    document.write(arr[1]);
+     document.write("<br>");
+    var arr=new Array("Abhi","Bhai","ki","jal","gyi","yeah",100);
+    document.write(arr[0]);
+    document.write("<br>");
+    document.write(arr[1]);
+    document.write("<br>");
+    document.write(arr[6]);
+    document.write("<br>");
+    var arr=["hello","world","100"];
+    document.write(arr[0]);
+    document.write("<br>");
+    document.write(arr[1]);
+    document.write("<br>");
+    document.write(arr[2]);
+    document.write("<br>");
+
+    var a=[1,2,3];
+    var b=["b","c","a"];
+    var a_b=a.concat(b);
+    document.write("a_b : "+a_b);
+    document.write("<br>");
+    a.sort();
+    b.sort();
+    document.write(a[0]);
+    document.write("<br>");
+    document.write(a[1]);
+    document.write("<br>");
+    document.write(a[2]);
+    document.write("<br>");
+    document.write(b[0]);
+    document.write("<br>");
+    document.write(b[1]);
+    document.write("<br>");
+    document.write(b[2]);
+    document.write("<br>");
+
+    function sum(a,b){
+    	var c=a+b;
+    	document.write(c);
+    	document.write("<br>");
+    }
+    sum(10,20);
+
+    var str="shalinijha"
+    var len=str.length;
+    document.write("len : "+len);
+    document.write("<br>");
+    var c=str.charAt(0);
+    document.write("char is : "+c);
+    document.write("<br>");
+    var c=str.charCodeAt(0);
+    document.write("char is : "+c);
+    document.write("<br>");
+    var c=str.indexOf('s');
+    document.write("char is : "+c);
+    document.write("<br>");
+
+    var str=new String("shalinijha");
+    var answer=str.localeCompare("lin");
+    document.write("answer is  : "+answer);
+    document.write("<br>");
+    var answer=str.localeCompare("zzz");
+    document.write("answer is : "+answer);
+    document.write("<br>");        
+
+	</script>
+</body>

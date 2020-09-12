@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dialog Box</title>
+</head>
+<body>
+<input type="button" name="confirm" value="click" onclick="confirmation()">
+<br>
+<input type="button" name="fn" value="click me na" onclick="myfunction()">
+</body>
+<script>
+	function confirmation(){
+		var ans=confirm("You want to see website click ok");
+		if(ans){
+			alert("welcome to srk music band");
+			window.location="https://www.youtube.com/watch?v=a3aNOVG6fmc";
+		}else{
+			alert("sorry you clicked cancelled button");
+		}
+	}
+
+	function myfunction(){
+		var ans=prompt("Hi My name is computer. whats ur name ? ")
+		alert("Nice to meet you "+ans+"!");
+	}
+</script>
+</html>
